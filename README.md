@@ -17,9 +17,12 @@ BERT - Our bert model is adapted from this implementation: https://github.com/hu
   * ```saved_results.txt```: The results of test set for emotion extraction, cause extraction and emotion-cause pair extraction. We adopt early stopping strategy, and the highest F-measure model on the validation set is used to evaluate the test set.  
   * ```train.pkl```: A list where contains two items. train\[0\] is a list of document and train\[1\] is a list the correspondding emotion-cause pairs. For example, train\[0\]\[0\]="*Last week, I lost my phone where shopping, I feel sad now*", then train\[1\]\[0\]=\[(2, 1)\].  
   * ```valid.pkl```: Similar to train.pkl.  
-  * ```test.pkl```: Similar to test.pkl.  
-* ```doc2pair.pkl```: A dict twhere the key is the text of a document, and the valud is the correspondding emotion-cause pairs.  
+  * ```test.pkl```: Similar to train.pkl.  
+* ```doc2pair.pkl```: A dict where the key is the content of a document, and the value is the correspondding emotion-cause pairs.  
 
-**Utils** - A dir contains several python scripts used in this code.  
+**Utils** - A dir where contains several python scripts used in this code.  
 * ```Evaluation.py```: Used to evaluate the performance of the proposed model.  
+* ```Metrics.py```: Metrics for emotion extraction, cause extraction and emotion-cause pair extractions.  
+* ```PrepareData.py```: The scipt for preparing data.  
+* ```Transform```: 
 
