@@ -9,21 +9,6 @@ import copy
 action2id = {'shift': 0, 'left_arc_ln': 1, 'left_arc_lt': 2, 
              'right_arc_ln': 3, 'right_arc_lt': 4}
 
-def CartesianActionSequence(data):
-    texts, pairs = data[0], data[1]
-    action_sequence = []
-    for text, pair in zip(texts, pairs):
-        t_len = len(text.split('\x01'))
-        temp = []
-        for i in range(t_len):
-            for j in range(t_len):
-                if (i,j) in set(pair):
-                    temp.append((i,j,1))
-                else:
-                    temp.append((i,j,0))
-        action_sequence.append(temp)
-    return action_sequence
-
 def GetAction(s_pair, pairs, action2id):
     actions = []
     emotions, _ = zip(*pairs)
