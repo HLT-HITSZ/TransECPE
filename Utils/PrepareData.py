@@ -62,13 +62,7 @@ def DataSplit(doc2pair, save_path):
     pickle.dump(valid, open(save_path + '/valid.pkl', 'wb'))
     pickle.dump(test, open(save_path + '/test.pkl', 'wb'))
     
-    return train, valid, test, save_path
-
-
-def PrintMsgSingle(total_batch, acc, pre, rec, f1):
-    sklearn_msg = 'sklearn total batch: {}, pre: {:.4f}, rec: {:.4f}, f1: {:.4f}, acc{:.4f}'.format(total_batch, pre, rec,f1,acc)
-    print (sklearn_msg) 
-    
+    return train, valid, test, save_path    
     
 def PrintMsg(total_batch, emo_metric, cse_metric, pr_metric):
     emo_msg = 'total batch: {}, emo pre: {:.4f}, emo rec: {:.4f}, emo f1: {:.4f}, emo acc: {:.4f}'.format(total_batch, emo_metric[0], emo_metric[1], emo_metric[2],emo_metric[3])
