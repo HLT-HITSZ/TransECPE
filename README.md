@@ -24,5 +24,8 @@ BERT - Our bert model is adapted from this implementation: https://github.com/hu
 * ```Evaluation.py```: Used to evaluate the performance of the proposed model.  
 * ```Metrics.py```: Metrics for emotion extraction, cause extraction and emotion-cause pair extractions.  
 * ```PrepareData.py```: The scipt for preparing data.  
-* ```Transform```: 
+* ```Transform.py```: Transforming documents to a sequence of defined actions and parser states from left-to-right based on the emotion-cause pairs.  
 
+**Config.py*** - The script holds all the model configuration.  
+**TransModule.py** - The script where contains the proposed transition-based model.  
+**Run.py** - The main script to train and evaluate the proposed transition-based model on different splits.
