@@ -1,0 +1,15 @@
+>>>>>>>>>>>>>>>>>>>>Emotion extraction<<<<<<<<<<<<<<<<<<<<
+precision: 0.8689
+recall: 0.8524
+f1: 0.8606
+
+>>>>>>>>>>>>>>>>>>>>>Cause extraction<<<<<<<<<<<<<<<<<<<<<
+precision: 0.7387
+recall: 0.6967
+f1: 0.7171
+
+>>>>>>>>>>>>>>Emotion-Cause pair extraction<<<<<<<<<<<<<<<
+precision: 0.7286
+recall: 0.6872
+f1: 0.7073
+
