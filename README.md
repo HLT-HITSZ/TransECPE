@@ -26,6 +26,8 @@ BERT - Our bert model is adapted from this implementation: https://github.com/hu
 * ```PrepareData.py```: The scipt for preparing data.  
 * ```Transform.py```: Transforming documents to a sequence of defined actions and parser states from left-to-right based on the emotion-cause pairs.  
 
-**Config.py*** - The script holds all the model configuration.  
-**TransModule.py** - The script where contains the proposed transition-based model.  
-**Run.py** - The main script to train and evaluate the proposed transition-based model on different splits.
+```Config.py``` - The script holds all the model configuration.  
+```TransModule.py``` - The script where contains the proposed transition-based model.  
+```Run.py``` - The main script to train and evaluate the proposed transition-based model on different splits.  
+# Usage
+python3 Run.py
